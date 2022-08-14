@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './task/task';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kanban-fire';
+  todo: Task[] = [
+    {
+      title:'Buy Milk',
+      description:'Go to the store and buy milk'
+    }
+  ]
 }
